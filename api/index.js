@@ -1,4 +1,5 @@
 // Vercel serverless function entry point
-// This loads the built Express server and exports it as a serverless function
+// Import the built server bundle
+import handler from '../dist/index.cjs';
 
-export { default } from '../dist/index.cjs';
+export default handler;
