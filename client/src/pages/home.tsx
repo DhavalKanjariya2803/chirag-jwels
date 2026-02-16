@@ -6,6 +6,7 @@ import { products, categories } from "@/lib/data";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Star, ShieldCheck, Truck } from "lucide-react";
 import { Link } from "wouter";
+import { FeaturedCollections } from "@/components/home/FeaturedCollections";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
       <Hero />
 
       {/* Featured Categories */}
-      <section className="py-24 bg-white">
+      {/* <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <span className="text-accent uppercase tracking-widest text-sm font-bold mb-3 block">Collections</span>
@@ -43,10 +44,10 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Featured Products */}
-      <section className="py-24 bg-secondary/30">
+      {/* <section className="py-24 bg-secondary/30">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-end mb-12">
             <div>
@@ -66,7 +67,10 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
+
+      {/* Featured Collections Section */}
+      <FeaturedCollections />
 
       {/* Trust Indicators */}
       <section className="py-20 bg-primary text-white">

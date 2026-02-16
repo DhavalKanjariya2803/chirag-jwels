@@ -3,7 +3,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { products } from "@/lib/data";
 import { Button } from "@/components/ui/button";
-import { Check, Share2, Heart, Truck, ShieldCheck, Package, Minus, Plus } from "lucide-react";
+import { Check, Share2, Heart, Truck, ShieldCheck, Package, Minus, Plus, Sparkles } from "lucide-react";
 import { useState } from "react";
 import NotFound from "@/pages/not-found";
 import { useCart } from "@/hooks/useCart";
@@ -47,14 +47,15 @@ export default function ProductDetails() {
     <Check key="check" className="h-5 w-5" />,
     <Truck key="truck" className="h-5 w-5" />,
     <ShieldCheck key="shield" className="h-5 w-5" />,
-    <Package key="package" className="h-5 w-5" />
+    <Package key="package" className="h-5 w-5" />,
+    <Sparkles key="sparkles" className="h-5 w-5" />,
   ];
 
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
 
-      <div className="pt-32 pb-20 container mx-auto px-4">
+      <div className="pt-20 md:pt-32 pb-20 container mx-auto px-4">
         {/* Breadcrumb - simple text for now */}
         <div className="text-sm text-muted-foreground mb-8">
           Home / {product.category} / <span className="text-primary font-medium">{product.name}</span>
@@ -63,7 +64,7 @@ export default function ProductDetails() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
           {/* Gallery */}
           <div className="space-y-4">
-            <div className="aspect-square bg-secondary overflow-hidden relative group">
+            <div className="aspect-square bg-white overflow-hidden relative group">
               <img
                 src={product.images && product.images.length > 0 ? product.images[activeImage] : product.image}
                 alt={product.name}
@@ -82,6 +83,34 @@ export default function ProductDetails() {
                 </div>
               ))}
             </div>
+          
+            {/* Product Details */}
+            {product.details && (
+              <div className="mt-16 space-y-10">
+                {product.details.map((detail, idx) => (
+                  <div key={idx} className="group">
+                    <div className="flex flex-col md:flex-row gap-8 items-start">
+                      <div className="flex-1 space-y-4">
+                        <h3 className="font-serif text-2xl font-bold text-primary relative inline-block">
+                          {detail.title}
+                          <span className="absolute -bottom-1 left-0 w-12 h-0.5 bg-accent/30 transition-all duration-300 group-hover:w-full"></span>
+                        </h3>
+                        <p className="text-muted-foreground leading-relaxed text-sm md:text-base">
+                          {detail.description}
+                        </p>
+                      </div>
+                      <div className="w-full md:w-2/5 aspect-4/3 bg-white overflow-hidden rounded-lg transition-all duration-500">
+                        <img
+                          src={detail.image}
+                          alt={detail.title}
+                          className="w-full h-full object-contain p-4 transition-transform duration-700 group-hover:scale-110"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
 
           {/* Details */}
@@ -97,7 +126,7 @@ export default function ProductDetails() {
             {/* Features */}
             <div className="grid grid-cols-2 gap-y-4 gap-x-8 mb-10">
               {product.features.map((feature, idx) => (
-                <div key={idx} className="flex items-center gap-3 text-sm text-primary/70">
+                <div key={idx} className={`flex items-center gap-3 text-sm text-primary/70 ${idx === 4 ? "col-span-2" : ""}`}>
                   <span className="text-primary/60">{featuresIconMap[idx]}</span>
                   <span className="font-medium">{feature}</span>
                 </div>
@@ -160,7 +189,7 @@ export default function ProductDetails() {
             </div>
 
             <div className="w-full space-y-8 border-t border-border pt-8 mt-10">
-              <div className="space-y-3">
+              <div className="space-y-3 hidden">
                 <h3 className="font-serif text-xl font-bold text-primary">Product Details</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   Our gemstones are sourced from the finest mines worldwide. Each stone is carefully selected for its color, clarity, and brilliance. This specific piece features a unique cut that maximizes its natural luster.

@@ -8,12 +8,14 @@ export function Hero() {
 
   const slides = [
     {
+      type: "image",
       image: "/assets/hero-gems.png",
       title: "Timeless Elegance",
       subtitle: "Discover the world's most exquisite gemstones",
     },
     {
-      image: "/assets/sapphire.png",
+      type: "video",
+      image: "/assets/hero-video.mp4",
       title: "Royal Collection",
       subtitle: "Handpicked sapphires for the discerning collector",
     },
@@ -27,11 +29,22 @@ export function Hero() {
         <div className="flex h-full">
           {slides.map((slide, index) => (
             <div className="relative flex-[0_0_100%] h-full min-w-0" key={index}>
-              <img
-                src={slide.image}
-                alt={slide.title}
-                className="h-full w-full object-cover opacity-80"
-              />
+              {slide.type === "video" ? (
+                <video
+                  src={slide.image}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="h-full w-full object-cover opacity-80"
+                />
+              ) : (
+                <img
+                  src={slide.image}
+                  alt={slide.title}
+                  className="h-full w-full object-cover opacity-80"
+                />
+              )}
               <div className="absolute inset-0 flex items-center justify-center z-20 text-center px-4">
                 <motion.div
                   initial={{ opacity: 0, y: 30 }}
