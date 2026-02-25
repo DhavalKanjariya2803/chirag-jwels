@@ -44,11 +44,11 @@ export function FeaturedCollections() {
             >
               {/* Image Column */}
               <div className="w-full md:w-1/2">
-                <div className="relative group overflow-hidden bg-white">
+                <div className="w-full relative group overflow-hidden bg-white h-[400px] md:h-[528px]">
                   <img
                     src={product.image}
                     alt={product.name}
-                    className={`w-full object-cover transition-transform duration-1000 ${index !== 7 ? "aspect-4/3 scale-125 group-hover:scale-150" : "group-hover:scale-110"}`}
+                    className="w-full h-full object-contain object-center transition-transform duration-1000 group-hover:scale-105"
                   />
                 </div>
               </div>
@@ -58,11 +58,11 @@ export function FeaturedCollections() {
                 <h2 className="font-serif text-3xl lg:text-4xl font-bold text-primary uppercase tracking-tight">
                   {product.name}
                 </h2>
-                <p className="text-muted-foreground text-lg leading-relaxed max-w-lg">
+                <p className="text-muted-foreground text-lg leading-relaxed">
                   {product.description}
                 </p>
                 <div>
-                  <Link href={`/product/${product.id}`}>
+                  <Link href={`/category/${product.category.toLocaleLowerCase()}`}>
                     <Button className="text-white px-8 h-10 rounded-full text-xs font-bold tracking-widest uppercase transition-all duration-300 hover:opacity-90">
                       Available Stones
                     </Button>

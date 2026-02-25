@@ -38,7 +38,7 @@ export default function Category() {
 
       <div className="container mx-auto px-4 py-16">
         {/* Filters (Visual only for now) */}
-        <div className="flex-wrap gap-4 mb-12 justify-center hidden">
+        <div className="flex-wrap gap-4 mb-12 justify-center">
           {categories.map(cat => (
              <Link key={cat.slug} href={`/category/${cat.slug}`}>
                <Button 

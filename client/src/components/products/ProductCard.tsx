@@ -44,7 +44,7 @@ export function ProductCard({ product }: ProductCardProps) {
               alt={product.name}
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />
-            <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <div className="absolute inset-0 bg-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
               <Button className="bg-white text-primary hover:bg-accent hover:text-primary rounded-none translate-y-4 group-hover:translate-y-0 transition-all duration-300">
                 View Details
               </Button>

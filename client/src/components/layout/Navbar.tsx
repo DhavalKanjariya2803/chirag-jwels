@@ -88,7 +88,7 @@ export function Navbar() {
               </Link>
 
               {link.submenu && (
-                <div className="absolute top-full left-0 w-64 bg-white shadow-xl border border-border/50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-[60] py-2 rounded-md">
+                <div className="absolute top-full left-0 w-fit bg-white shadow-xl border border-border/50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-[60] py-2 rounded-md">
                   <div className="max-h-[220px] overflow-y-auto custom-scrollbar">
                     {link.submenu.map((sub) => (
                       <Link key={sub.name} href={sub.href}>

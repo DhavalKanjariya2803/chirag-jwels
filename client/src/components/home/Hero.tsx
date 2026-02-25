@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { Button } from "@/components/ui/button";
@@ -23,7 +24,7 @@ export function Hero() {
 
   return (
     <div className="relative h-screen w-full overflow-hidden bg-black">
-      <div className="absolute inset-0 z-10 bg-black/30" />
+      <div className="absolute inset-0 z-10 bg-black/30 pointer-events-none" />
       
       <div className="h-full" ref={emblaRef}>
         <div className="flex h-full">
@@ -62,12 +63,14 @@ export function Hero() {
                     {slide.subtitle}
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <Button 
-                      size="lg" 
-                      className="bg-accent text-primary hover:bg-white hover:text-primary min-w-[180px] h-14 text-base tracking-wide uppercase font-medium rounded-none"
-                    >
-                      View Collection
-                    </Button>
+                    <Link href="/category/all">
+                      <Button 
+                        size="lg" 
+                        className="bg-accent text-primary hover:bg-white hover:text-primary min-w-[180px] h-14 text-base tracking-wide uppercase font-medium rounded-none cursor-pointer relative"
+                      >
+                        View Collection
+                      </Button>
+                    </Link>
                     <Button 
                       size="lg" 
                       variant="outline"
