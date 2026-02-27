@@ -39,6 +39,14 @@ export default function Category() {
       <div className="container mx-auto px-4 py-16">
         {/* Filters (Visual only for now) */}
         <div className="flex-wrap gap-4 mb-12 justify-center">
+          <Link href="/category/all">
+            <Button 
+                variant={slug === "all" ? "default" : "outline"}
+                className={`rounded-none uppercase tracking-wide ${slug === "all" ? 'bg-primary text-white' : 'hover:bg-primary hover:text-white'}`}
+            >
+                View All
+            </Button>
+          </Link>
           {categories.map(cat => (
              <Link key={cat.slug} href={`/category/${cat.slug}`}>
                <Button 
@@ -49,14 +57,6 @@ export default function Category() {
                </Button>
              </Link>
           ))}
-          <Link href="/category/all">
-            <Button 
-                variant={slug === "all" ? "default" : "outline"}
-                className={`rounded-none uppercase tracking-wide ${slug === "all" ? 'bg-primary text-white' : 'hover:bg-primary hover:text-white'}`}
-            >
-                View All
-            </Button>
-          </Link>
         </div>
 
         {/* Product Grid */}

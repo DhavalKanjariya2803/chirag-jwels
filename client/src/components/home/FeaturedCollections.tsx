@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { products } from "@/lib/data";
+import { products, categoriesData } from "@/lib/data";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
@@ -10,6 +10,9 @@ export function FeaturedCollections() {
   const displayedProducts = showAll
     ? products
     : products.slice(0, initialCount);
+  const displayedCategories = showAll
+    ? categoriesData
+    : categoriesData.slice(0, initialCount);
 
   return (
     <section className="py-10 md:py-24 bg-white overflow-hidden">
@@ -31,7 +34,7 @@ export function FeaturedCollections() {
 
         {/* Product List with Alternating Layout */}
         <div className="space-y-2">
-          {displayedProducts.map((product, index) => (
+          {displayedCategories.map((product, index) => (
             <motion.div
               key={product.id}
               initial={{ opacity: 0, y: 50 }}

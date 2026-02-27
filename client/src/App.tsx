@@ -12,6 +12,7 @@ import Contact from "@/pages/contact";
 import Category from "@/pages/category";
 import Cart from "@/pages/cart";
 import Wishlist from "@/pages/wishlist";
+import { ScrollToTop } from "@/components/layout/ScrollToTop";
 
 function Router() {
   return (
@@ -37,6 +38,7 @@ function App() {
         <WishlistProvider>
           <TooltipProvider>
             <Toaster />
+            <ScrollToTop />
             <Router />
           </TooltipProvider>
         </WishlistProvider>

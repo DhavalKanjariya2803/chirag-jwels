@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 import { useCart } from "@/hooks/useCart";
 import { useWishlist } from "@/hooks/useWishlist";
 
-import { products } from "@/lib/data";
+import { products, categoriesData } from "@/lib/data";
 
 export function Navbar() {
   const [location] = useLocation();
@@ -36,9 +36,9 @@ export function Navbar() {
     {
       name: "Gemstones",
       href: "/category/all",
-      submenu: products.map(product => ({
-        name: product.name,
-        href: `/product/${product.id}`
+      submenu: categoriesData.map(category => ({
+        name: category.name,
+        href: `/category/${category.category.toLowerCase()}`
       }))
     },
     { name: "Contact", href: "/contact" },

@@ -10,12 +10,58 @@ export interface Product {
   category: string;
   description: string;
   image: string;
+  className: string;
+  images: string[];
+  features: string[];
+  details?: ProductDetail[];
+}
+export interface categorie {
+  id: string;
+  name: string;
+  category: string;
+  description: string;
+  image: string;
   images: string[];
   features: string[];
   details?: ProductDetail[];
 }
 
-export const productsOld: Product[] = [
+export const categoriesData: categorie[] = [
+  {
+    id: "turquoise-001",
+    name: "Natural Kingman Turquoise",
+    category: "Turquoise",
+    description:
+      "Natural Kingman turquoise cabochons featuring vibrant sky-blue tones with beautiful spiderweb and natural matrix patterns. Professionally backed for durability, perfect for rings, pendants, and statement jewelry designs.",
+    image: "/assets/product/turquoise.png",
+    images: ["/assets/product/turquoise.png"],
+    features: [
+      "Authenticity Guaranteed",
+      "Free Shipping",
+      "Lifetime Warranty",
+      "30-Day Returns"
+    ],
+    details: [
+      {
+        title: "Ancient Protection",
+        description:
+          "Native American tribes considered turquoise sacred, believing it brought protection and strength. Ancient Egyptians used turquoise in amulets and burial masks, associating it with the gods Horus and Ra.",
+        image: "/assets/product/turquoise.png",
+      },
+      {
+        title: "Matrix Patterns",
+        description:
+          "The matrix in turquoise, the brown or black veins running through the stone, creates unique patterns. Stones with attractive matrix patterns are often more valuable than solid-colored stones.",
+        image: "/assets/product/turquoise.png",
+      },
+      {
+        title: "Color Changes",
+        description:
+          "Turquoise can change color based on its environment and the wearer's skin oils. Pure turquoise may become darker or lighter over time, which some collectors see as a sign of the stone's responsiveness.",
+        image: "/assets/product/turquoise.png",
+      },
+    ],
+  },
   {
     id: "emerald-001",
     name: "Emerald Gemstone",
@@ -387,6 +433,7 @@ export const products: Product[] = [
     id: "turquoise-001",
     name: "Natural Kingman Turquoise",
     category: "Turquoise",
+    className: "bg-[#FAFAFA]",
     description:
       "Natural Kingman turquoise cabochons featuring vibrant sky-blue tones with beautiful spiderweb and natural matrix patterns. Professionally backed for durability, perfect for rings, pendants, and statement jewelry designs.",
     image: "/assets/product/turquoise.png",
@@ -422,6 +469,7 @@ export const products: Product[] = [
     id: "turquoise-002",
     name: "Golden Hill Turquoise",
     category: "Turquoise",
+    className: "bg-[#FAFAFA]",
     description:
       "Natural Golden Hill turquoise cabochons showcasing soft sky-blue shades with distinctive lavender matrix patterns. Backed for added strength and stability, ideal for fine jewelry and unique statement pieces.",
     image: "/assets/product/golden-hill-turquoise.png",
@@ -457,6 +505,7 @@ export const products: Product[] = [
     id: "blue-bird-turquoise-001",
     name: "Blue Bird Turquoise",
     category: "Turquoise",
+    className: "",
     description:
       "Natural Blue Bird turquoise cabochons featuring vibrant sky-blue tones with beautiful spiderweb and natural matrix patterns. Professionally backed for durability, perfect for rings, pendants, and statement jewelry designs.",
     image: "/assets/product/blue-bird-turquoise.png",
@@ -494,6 +543,7 @@ export const products: Product[] = [
     id: "baja-turquoise-001",
     name: "Baja Turquoise Strands",
     category: "Turquoise",
+    className: "",
     description:
       "Natural Baja turquoise strands featuring rich blue and green hues with unique matrix patterns, perfect for handcrafted jewelry designs. To claim, comment “ME” or “MINE” (if numbered or lettered, please claim by the corresponding number or letter), and kindly make only one claim per comment; if purchasing beads or strands, comment “ME” for one strand and specify quantity if you would like more than one. Domestic U.S. shipping is $6.80 via USPS with combined postage available on multiple claims, priority shipping with insurance is available upon request, and international buyers are welcome (average shipping $15–$20, please message with your location for exact cost). After claiming, please send a direct message with your name and PayPal email for invoicing. Thank you!",
     image: "/assets/product/baja-turquoise.png",
@@ -531,6 +581,7 @@ export const products: Product[] = [
     id: "baja-turquoise-002",
     name: "Baja Turquoise Strands",
     category: "Turquoise",
+    className: "",
     description:
       "Natural Baja turquoise strands featuring rich blue and green hues with unique matrix patterns, perfect for handcrafted jewelry designs. To claim, comment “ME” or “MINE” (if numbered or lettered, please claim by the corresponding number or letter), and kindly make only one claim per comment; if purchasing beads or strands, comment “ME” for one strand and specify quantity if you would like more than one. Domestic U.S. shipping is $6.80 via USPS with combined postage available on multiple claims, priority shipping with insurance is available upon request, and international buyers are welcome (average shipping $15–$20, please message with your location for exact cost). After claiming, please send a direct message with your name and PayPal email for invoicing. Thank you!",
     image: "/assets/product/baja-tourmaline-1.png",
@@ -568,6 +619,7 @@ export const products: Product[] = [
     id: "natural-lone-mtn-turquoise-001",
     name: "Natural Lone Mtn Turquoise",
     category: "Turquoise",
+    className: "",
     description:
       "Premium natural Lone Mountain turquoise known for its rich sky-blue to deep blue tones and beautiful spiderweb or clean matrix patterns. Highly sought after for its quality and rarity, this gemstone is perfect for fine jewelry, custom silverwork, and statement pieces. Each stone showcases unique natural variations, making every piece truly one of a kind.",
     image: "/assets/product/natural-lone-mtn-turquoise.png",
@@ -607,6 +659,7 @@ export const products: Product[] = [
     id: "lone-mountain-turquoise-001",
     name: "Lone Mountain Turquoise",
     category: "Turquoise",
+    className: "bg-[#FAFAFA]",
     description:
       "Exceptional turquoise prized for its vibrant blue hues and distinctive matrix patterns, ranging from clean sky-blue stones to intricate spiderweb designs. Known for its high quality and collectibility, Lone Mountain turquoise is perfect for fine jewelry, statement pieces, and custom artisan creations. Each stone is naturally unique, showcasing its own character and beauty.",
     image: "/assets/product/lone-mountain-turquoise.png",
@@ -646,6 +699,7 @@ export const products: Product[] = [
     id: "natural-kazakhstan-turquoise-001",
     name: "Natural Kazakhstan Turquoise",
     category: "Turquoise",
+    className: "bg-[#FAFAFA]",
     description:
       "Premium natural Kazakhstan turquoise known for its rich sky-blue to deep blue tones and beautiful spiderweb or clean matrix patterns. Highly sought after for its quality and rarity, this gemstone is perfect for fine jewelry, custom silverwork, and statement pieces. Each stone showcases unique natural variations, making every piece truly one of a kind.",
     image: "/assets/product/natural-kazakhstan-turquoise.png",
@@ -684,8 +738,8 @@ export const products: Product[] = [
 ];
 
 export const categories = [
+  { name: "Turquoise", image: "/assets/turquoise.webp", slug: "turquoise" },
   { name: "Emerald", image: "/assets/emerald.webp", slug: "emerald" },
   { name: "Ruby", image: "/assets/ruby.webp", slug: "ruby" },
   { name: "Sapphire", image: "/assets/sapphire.webp", slug: "sapphire" },
-  { name: "Turquoise", image: "/assets/turquoise.webp", slug: "turquoise" },
 ];

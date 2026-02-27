@@ -38,14 +38,14 @@ export function ProductCard({ product }: ProductCardProps) {
     >
       <Link href={`/product/${product.id}`}>
         <Card className="group overflow-hidden border-none shadow-none bg-transparent cursor-pointer">
-          <CardContent className="p-0 relative aspect-[4/5] bg-white overflow-hidden">
+          <CardContent className={`p-0 relative aspect-[4/5] overflow-hidden ${product.className}`}>
             <img
               src={product.image}
               alt={product.name}
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              className="w-full h-full object-contain object-center transition-transform duration-700"
             />
-            <div className="absolute inset-0 bg-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-              <Button className="bg-white text-primary hover:bg-accent hover:text-primary rounded-none translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+            <div className="absolute left-3 right-3 bottom-3 bg-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <Button className="w-full bg-white text-primary hover:bg-accent hover:text-primary rounded-none translate-y-4 group-hover:translate-y-0 transition-all duration-300">
                 View Details
               </Button>
             </div>

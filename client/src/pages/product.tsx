@@ -73,7 +73,7 @@ export default function ProductDetails() {
             </div>
             {/* Thumbnails */}
             <div className="grid grid-cols-4 gap-4">
-              {product.images.map((img, idx) => (
+              {product.images.length > 1 && product.images.map((img, idx) => (
                 <div
                   key={idx}
                   className={`aspect-square bg-secondary cursor-pointer border-2 transition-all ${activeImage === idx ? 'border-primary' : 'border-transparent hover:border-primary/30'}`}
@@ -85,7 +85,7 @@ export default function ProductDetails() {
             </div>
           
             {/* Product Details */}
-            {product.details && (
+            {/* {product.details && (
               <div className="mt-16 space-y-10">
                 {product.details.map((detail, idx) => (
                   <div key={idx} className="group">
@@ -110,7 +110,7 @@ export default function ProductDetails() {
                   </div>
                 ))}
               </div>
-            )}
+            )} */}
           </div>
 
           {/* Details */}
