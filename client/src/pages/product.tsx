@@ -183,9 +183,9 @@ export default function ProductDetails() {
                   <Share2 className="h-6 w-6" />
                 </Button>
               </div>
-              <p className="text-xs text-muted-foreground text-center">
+              {/* <p className="text-xs text-muted-foreground text-center">
                 Need help? Call us at <span className="text-primary font-medium">+1 (555) 123-4567</span>
-              </p>
+              </p> */}
             </div>
 
             <div className="w-full space-y-8 border-t border-border pt-8 mt-10">
@@ -195,18 +195,18 @@ export default function ProductDetails() {
                   Our gemstones are sourced from the finest mines worldwide. Each stone is carefully selected for its color, clarity, and brilliance. This specific piece features a unique cut that maximizes its natural luster.
                 </p>
               </div>
-              <div className="space-y-3">
+              {/* <div className="space-y-3">
                 <h3 className="font-serif text-xl font-bold text-primary">Shipping & Returns</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   We offer complimentary insured shipping worldwide. All items are shipped via secure courier service. Returns are accepted within 30 days of delivery, provided the item is in its original condition.
                 </p>
-              </div>
-              <div className="space-y-3">
+              </div> */}
+              {/* <div className="space-y-3">
                 <h3 className="font-serif text-xl font-bold text-primary">Certification</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   This gemstone comes with a certificate of authenticity from a recognized gemological laboratory, guaranteeing its natural origin and quality.
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

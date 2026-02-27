@@ -27,41 +27,88 @@ export interface categorie {
 }
 
 export const categoriesData: categorie[] = [
-  {
+   {
     id: "turquoise-001",
-    name: "Natural Kingman Turquoise",
+    name: "Turquoise Gemstone",
     category: "Turquoise",
     description:
-      "Natural Kingman turquoise cabochons featuring vibrant sky-blue tones with beautiful spiderweb and natural matrix patterns. Professionally backed for durability, perfect for rings, pendants, and statement jewelry designs.",
-    image: "/assets/product/turquoise.png",
-    images: ["/assets/product/turquoise.png"],
+      "Natural turquoise gemstones in shades of blue, teal, and green. Features spiderweb and patchy matrix patterns, perfect for statement jewelry.",
+    image: "/assets/turquoise.webp",
+    images: [
+      "/assets/turquoise.webp",
+      "/assets/turquoise-1.png",
+      "/assets/turquoise-2.png",
+      "/assets/turquoise-3.png",
+      "/assets/turquoise-4.png",
+      "/assets/turquoise-5.png",
+      "/assets/turquoise-6.svg",
+      "/assets/turquoise-7.svg",
+      "/assets/turquoise-8.png",
+      "/assets/turquoise-9.png",
+    ],
     features: [
       "Authenticity Guaranteed",
       "Free Shipping",
       "Lifetime Warranty",
-      "30-Day Returns"
+      "30-Day Returns",
+      "Sky blue turquoise with natural matrix patterns.",
     ],
     details: [
       {
         title: "Ancient Protection",
         description:
           "Native American tribes considered turquoise sacred, believing it brought protection and strength. Ancient Egyptians used turquoise in amulets and burial masks, associating it with the gods Horus and Ra.",
-        image: "/assets/product/turquoise.png",
+        image: "/assets/turquoise-6.svg",
       },
       {
         title: "Matrix Patterns",
         description:
           "The matrix in turquoise, the brown or black veins running through the stone, creates unique patterns. Stones with attractive matrix patterns are often more valuable than solid-colored stones.",
-        image: "/assets/product/turquoise.png",
+        image: "/assets/turquoise-7.svg",
       },
       {
         title: "Color Changes",
         description:
           "Turquoise can change color based on its environment and the wearer's skin oils. Pure turquoise may become darker or lighter over time, which some collectors see as a sign of the stone's responsiveness.",
-        image: "/assets/product/turquoise.png",
+        image: "/assets/turquoise-6.svg",
       },
     ],
   },
+  // {
+  //   id: "turquoise-001",
+  //   name: "Natural Kingman Turquoise",
+  //   category: "Turquoise",
+  //   description:
+  //     "Natural Kingman turquoise cabochons featuring vibrant sky-blue tones with beautiful spiderweb and natural matrix patterns. Professionally backed for durability, perfect for rings, pendants, and statement jewelry designs.",
+  //   image: "/assets/product/turquoise.png",
+  //   images: ["/assets/product/turquoise.png"],
+  //   features: [
+  //     "Authenticity Guaranteed",
+  //     "Free Shipping",
+  //     "Lifetime Warranty",
+  //     "30-Day Returns"
+  //   ],
+  //   details: [
+  //     {
+  //       title: "Ancient Protection",
+  //       description:
+  //         "Native American tribes considered turquoise sacred, believing it brought protection and strength. Ancient Egyptians used turquoise in amulets and burial masks, associating it with the gods Horus and Ra.",
+  //       image: "/assets/product/turquoise.png",
+  //     },
+  //     {
+  //       title: "Matrix Patterns",
+  //       description:
+  //         "The matrix in turquoise, the brown or black veins running through the stone, creates unique patterns. Stones with attractive matrix patterns are often more valuable than solid-colored stones.",
+  //       image: "/assets/product/turquoise.png",
+  //     },
+  //     {
+  //       title: "Color Changes",
+  //       description:
+  //         "Turquoise can change color based on its environment and the wearer's skin oils. Pure turquoise may become darker or lighter over time, which some collectors see as a sign of the stone's responsiveness.",
+  //       image: "/assets/product/turquoise.png",
+  //     },
+  //   ],
+  // },
   {
     id: "emerald-001",
     name: "Emerald Gemstone",
@@ -181,53 +228,7 @@ export const categoriesData: categorie[] = [
       },
     ],
   },
-  {
-    id: "turquoise-001",
-    name: "Turquoise Gemstone",
-    category: "Turquoise",
-    description:
-      "Natural turquoise gemstones in shades of blue, teal, and green. Features spiderweb and patchy matrix patterns, perfect for statement jewelry.",
-    image: "/assets/turquoise.webp",
-    images: [
-      "/assets/turquoise.webp",
-      "/assets/turquoise-1.png",
-      "/assets/turquoise-2.png",
-      "/assets/turquoise-3.png",
-      "/assets/turquoise-4.png",
-      "/assets/turquoise-5.png",
-      "/assets/turquoise-6.svg",
-      "/assets/turquoise-7.svg",
-      "/assets/turquoise-8.png",
-      "/assets/turquoise-9.png",
-    ],
-    features: [
-      "Authenticity Guaranteed",
-      "Free Shipping",
-      "Lifetime Warranty",
-      "30-Day Returns",
-      "Sky blue turquoise with natural matrix patterns.",
-    ],
-    details: [
-      {
-        title: "Ancient Protection",
-        description:
-          "Native American tribes considered turquoise sacred, believing it brought protection and strength. Ancient Egyptians used turquoise in amulets and burial masks, associating it with the gods Horus and Ra.",
-        image: "/assets/turquoise-6.svg",
-      },
-      {
-        title: "Matrix Patterns",
-        description:
-          "The matrix in turquoise, the brown or black veins running through the stone, creates unique patterns. Stones with attractive matrix patterns are often more valuable than solid-colored stones.",
-        image: "/assets/turquoise-7.svg",
-      },
-      {
-        title: "Color Changes",
-        description:
-          "Turquoise can change color based on its environment and the wearer's skin oils. Pure turquoise may become darker or lighter over time, which some collectors see as a sign of the stone's responsiveness.",
-        image: "/assets/turquoise-6.svg",
-      },
-    ],
-  },
+ 
   {
     id: "tourmaline-001",
     name: "Tourmaline Gemstone",
@@ -433,7 +434,7 @@ export const products: Product[] = [
     id: "turquoise-001",
     name: "Natural Kingman Turquoise",
     category: "Turquoise",
-    className: "bg-[#FAFAFA]",
+    className: "bg-[#FFF8E6]",
     description:
       "Natural Kingman turquoise cabochons featuring vibrant sky-blue tones with beautiful spiderweb and natural matrix patterns. Professionally backed for durability, perfect for rings, pendants, and statement jewelry designs.",
     image: "/assets/product/turquoise.png",
@@ -469,7 +470,7 @@ export const products: Product[] = [
     id: "turquoise-002",
     name: "Golden Hill Turquoise",
     category: "Turquoise",
-    className: "bg-[#FAFAFA]",
+    className: "bg-[#E6F7FA]",
     description:
       "Natural Golden Hill turquoise cabochons showcasing soft sky-blue shades with distinctive lavender matrix patterns. Backed for added strength and stability, ideal for fine jewelry and unique statement pieces.",
     image: "/assets/product/golden-hill-turquoise.png",
@@ -505,7 +506,7 @@ export const products: Product[] = [
     id: "blue-bird-turquoise-001",
     name: "Blue Bird Turquoise",
     category: "Turquoise",
-    className: "",
+    className: "bg-[#F2F2F2]",
     description:
       "Natural Blue Bird turquoise cabochons featuring vibrant sky-blue tones with beautiful spiderweb and natural matrix patterns. Professionally backed for durability, perfect for rings, pendants, and statement jewelry designs.",
     image: "/assets/product/blue-bird-turquoise.png",
@@ -659,7 +660,7 @@ export const products: Product[] = [
     id: "lone-mountain-turquoise-001",
     name: "Lone Mountain Turquoise",
     category: "Turquoise",
-    className: "bg-[#FAFAFA]",
+    className: "bg-[#FFF8E6]",
     description:
       "Exceptional turquoise prized for its vibrant blue hues and distinctive matrix patterns, ranging from clean sky-blue stones to intricate spiderweb designs. Known for its high quality and collectibility, Lone Mountain turquoise is perfect for fine jewelry, statement pieces, and custom artisan creations. Each stone is naturally unique, showcasing its own character and beauty.",
     image: "/assets/product/lone-mountain-turquoise.png",
@@ -699,7 +700,7 @@ export const products: Product[] = [
     id: "natural-kazakhstan-turquoise-001",
     name: "Natural Kazakhstan Turquoise",
     category: "Turquoise",
-    className: "bg-[#FAFAFA]",
+    className: "bg-[#E6F7FA]",
     description:
       "Premium natural Kazakhstan turquoise known for its rich sky-blue to deep blue tones and beautiful spiderweb or clean matrix patterns. Highly sought after for its quality and rarity, this gemstone is perfect for fine jewelry, custom silverwork, and statement pieces. Each stone showcases unique natural variations, making every piece truly one of a kind.",
     image: "/assets/product/natural-kazakhstan-turquoise.png",
