@@ -52,7 +52,7 @@ export function ProductCard({ product }: ProductCardProps) {
           </CardContent>
           <CardFooter className="flex flex-col items-start pt-6 px-0 pb-0">
             <span className="text-muted-foreground text-xs uppercase tracking-widest mb-2">{product.category}</span>
-            <h3 className="font-serif text-xl font-medium text-primary mb-2 group-hover:text-accent transition-colors">
+            <h3 className="font-serif text-base sm:text-xl font-medium text-primary mb-2 group-hover:text-accent transition-colors">
               {product.name}
             </h3>
             <p className="text-accent text-sm font-medium tracking-wide uppercase">

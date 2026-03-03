@@ -9,14 +9,14 @@ export function Hero() {
 
   const slides = [
     {
-      type: "image",
-      image: "/assets/hero-gems.png",
+      type: "video",
+      image: "/assets/hero-video-1.mp4",
       title: "Timeless Elegance",
       subtitle: "Discover the world's most exquisite gemstones",
     },
     {
       type: "video",
-      image: "/assets/hero-video.mp4",
+      image: "/assets/hero-video-2.mp4",
       title: "Royal Collection",
       subtitle: "Handpicked sapphires for the discerning collector",
     },

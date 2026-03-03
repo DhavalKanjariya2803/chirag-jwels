@@ -19,13 +19,13 @@ export function FeaturedCollections() {
       <div className="container mx-auto px-4">
         {/* Intro Text */}
         <div className="text-center max-w-3xl mx-auto mb-5">
-          <p className="text-lg italic text-primary/80 leading-relaxed font-light">
+          <p className="text-lg italic text-primary/80 leading-relaxed font-light tracking-[0.05em] font-proza-libre">
             Providing professionally cut, ethically sourced gemstones and rare
             treasures to creative people around the world since 1995.
           </p>
           <div className="mt-8">
             <Link href="/category/all">
-              <Button className="text-white px-10 h-12 rounded-full text-sm font-bold tracking-widest uppercase transition-all duration-300 shadow-lg hover:opacity-90">
+              <Button className="text-white px-10 h-12 rounded-full text-sm font-bold uppercase transition-all duration-300 shadow-lg hover:opacity-90 tracking-[.3em]">
                 Shop Now
               </Button>
             </Link>
@@ -58,15 +58,15 @@ export function FeaturedCollections() {
 
               {/* Text Column */}
               <div className="w-full md:w-1/2 space-y-6 text-center md:text-left">
-                <h2 className="font-serif text-3xl lg:text-4xl font-bold text-primary uppercase tracking-tight">
+                <h2 className="font-trirong text-3xl lg:text-4xl font-normal text-primary uppercase tracking-tight">
                   {product.name}
                 </h2>
-                <p className="text-muted-foreground text-lg leading-relaxed">
+                <p className="text-muted-foreground text-lg leading-relaxed font-proza-libre tracking-[0.05em]">
                   {product.description}
                 </p>
                 <div>
                   <Link href={`/category/${product.category.toLocaleLowerCase()}`}>
-                    <Button className="text-white px-8 h-10 rounded-full text-xs font-bold tracking-widest uppercase transition-all duration-300 hover:opacity-90">
+                    <Button className="text-white px-8 h-10 rounded-full text-xs font-bold uppercase transition-all duration-300 hover:opacity-90 font-proza-libre tracking-[.3em]">
                       Available Stones
                     </Button>
                   </Link>

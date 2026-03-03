@@ -27,7 +27,7 @@ export interface categorie {
 }
 
 export const categoriesData: categorie[] = [
-   {
+  {
     id: "turquoise-001",
     name: "Turquoise Gemstone",
     category: "Turquoise",
@@ -228,7 +228,6 @@ export const categoriesData: categorie[] = [
       },
     ],
   },
- 
   {
     id: "tourmaline-001",
     name: "Tourmaline Gemstone",
@@ -434,7 +433,7 @@ export const products: Product[] = [
     id: "turquoise-001",
     name: "Natural Kingman Turquoise",
     category: "Turquoise",
-    className: "bg-[#FFF8E6]",
+    className: "",
     description:
       "Natural Kingman turquoise cabochons featuring vibrant sky-blue tones with beautiful spiderweb and natural matrix patterns. Professionally backed for durability, perfect for rings, pendants, and statement jewelry designs.",
     image: "/assets/product/turquoise.png",
@@ -443,7 +442,7 @@ export const products: Product[] = [
       "Authenticity Guaranteed",
       "Free Shipping",
       "Lifetime Warranty",
-      "30-Day Returns"
+      "30-Day Returns",
     ],
     details: [
       {
@@ -470,7 +469,7 @@ export const products: Product[] = [
     id: "turquoise-002",
     name: "Golden Hill Turquoise",
     category: "Turquoise",
-    className: "bg-[#E6F7FA]",
+    className: "",
     description:
       "Natural Golden Hill turquoise cabochons showcasing soft sky-blue shades with distinctive lavender matrix patterns. Backed for added strength and stability, ideal for fine jewelry and unique statement pieces.",
     image: "/assets/product/golden-hill-turquoise.png",
@@ -479,7 +478,7 @@ export const products: Product[] = [
       "Authenticity Guaranteed",
       "Free Shipping",
       "Lifetime Warranty",
-      "30-Day Returns"
+      "30-Day Returns",
     ],
     details: [
       {
@@ -506,18 +505,16 @@ export const products: Product[] = [
     id: "blue-bird-turquoise-001",
     name: "Blue Bird Turquoise",
     category: "Turquoise",
-    className: "bg-[#F2F2F2]",
+    className: "",
     description:
       "Natural Blue Bird turquoise cabochons featuring vibrant sky-blue tones with beautiful spiderweb and natural matrix patterns. Professionally backed for durability, perfect for rings, pendants, and statement jewelry designs.",
     image: "/assets/product/blue-bird-turquoise.png",
-    images: [
-      "/assets/product/blue-bird-turquoise.png",
-    ],
+    images: ["/assets/product/blue-bird-turquoise.png"],
     features: [
       "Authenticity Guaranteed",
       "Free Shipping",
       "Lifetime Warranty",
-      "30-Day Returns"
+      "30-Day Returns",
     ],
     details: [
       {
@@ -548,14 +545,12 @@ export const products: Product[] = [
     description:
       "Natural Baja turquoise strands featuring rich blue and green hues with unique matrix patterns, perfect for handcrafted jewelry designs. To claim, comment “ME” or “MINE” (if numbered or lettered, please claim by the corresponding number or letter), and kindly make only one claim per comment; if purchasing beads or strands, comment “ME” for one strand and specify quantity if you would like more than one. Domestic U.S. shipping is $6.80 via USPS with combined postage available on multiple claims, priority shipping with insurance is available upon request, and international buyers are welcome (average shipping $15–$20, please message with your location for exact cost). After claiming, please send a direct message with your name and PayPal email for invoicing. Thank you!",
     image: "/assets/product/baja-turquoise.png",
-    images: [
-      "/assets/product/baja-turquoise.png",
-    ],
+    images: ["/assets/product/baja-turquoise.png"],
     features: [
       "Authenticity Guaranteed",
       "Free Shipping",
       "Lifetime Warranty",
-      "30-Day Returns"
+      "30-Day Returns",
     ],
     details: [
       {
@@ -586,14 +581,12 @@ export const products: Product[] = [
     description:
       "Natural Baja turquoise strands featuring rich blue and green hues with unique matrix patterns, perfect for handcrafted jewelry designs. To claim, comment “ME” or “MINE” (if numbered or lettered, please claim by the corresponding number or letter), and kindly make only one claim per comment; if purchasing beads or strands, comment “ME” for one strand and specify quantity if you would like more than one. Domestic U.S. shipping is $6.80 via USPS with combined postage available on multiple claims, priority shipping with insurance is available upon request, and international buyers are welcome (average shipping $15–$20, please message with your location for exact cost). After claiming, please send a direct message with your name and PayPal email for invoicing. Thank you!",
     image: "/assets/product/baja-tourmaline-1.png",
-    images: [
-      "/assets/product/baja-tourmaline-1.png",
-    ],
+    images: ["/assets/product/baja-tourmaline-1.png"],
     features: [
       "Authenticity Guaranteed",
       "Free Shipping",
       "Lifetime Warranty",
-      "30-Day Returns"
+      "30-Day Returns",
     ],
     details: [
       {
@@ -633,7 +626,7 @@ export const products: Product[] = [
       "Authenticity Guaranteed",
       "Free Shipping",
       "Lifetime Warranty",
-      "30-Day Returns"
+      "30-Day Returns",
     ],
     details: [
       {
@@ -660,7 +653,7 @@ export const products: Product[] = [
     id: "lone-mountain-turquoise-001",
     name: "Lone Mountain Turquoise",
     category: "Turquoise",
-    className: "bg-[#FFF8E6]",
+    className: "",
     description:
       "Exceptional turquoise prized for its vibrant blue hues and distinctive matrix patterns, ranging from clean sky-blue stones to intricate spiderweb designs. Known for its high quality and collectibility, Lone Mountain turquoise is perfect for fine jewelry, statement pieces, and custom artisan creations. Each stone is naturally unique, showcasing its own character and beauty.",
     image: "/assets/product/lone-mountain-turquoise.png",
@@ -673,7 +666,7 @@ export const products: Product[] = [
       "Authenticity Guaranteed",
       "Free Shipping",
       "Lifetime Warranty",
-      "30-Day Returns"
+      "30-Day Returns",
     ],
     details: [
       {
@@ -700,7 +693,7 @@ export const products: Product[] = [
     id: "natural-kazakhstan-turquoise-001",
     name: "Natural Kazakhstan Turquoise",
     category: "Turquoise",
-    className: "bg-[#E6F7FA]",
+    className: "",
     description:
       "Premium natural Kazakhstan turquoise known for its rich sky-blue to deep blue tones and beautiful spiderweb or clean matrix patterns. Highly sought after for its quality and rarity, this gemstone is perfect for fine jewelry, custom silverwork, and statement pieces. Each stone showcases unique natural variations, making every piece truly one of a kind.",
     image: "/assets/product/natural-kazakhstan-turquoise.png",
@@ -713,7 +706,7 @@ export const products: Product[] = [
       "Authenticity Guaranteed",
       "Free Shipping",
       "Lifetime Warranty",
-      "30-Day Returns"
+      "30-Day Returns",
     ],
     details: [
       {
@@ -735,7 +728,364 @@ export const products: Product[] = [
         image: "/assets/product/natural-kazakhstan-turquoise-2.png",
       },
     ],
-  }
+  },
+  {
+    id: "precious-01",
+    name: "Natural Emerald Gemstone",
+    category: "precious",
+    className: "",
+    description:
+      "A natural emerald valued for its vibrant green color and high transparency. This gemstone is associtaed with love, wisdom, and emotional balance. ideal for fine jewelry",
+    image: "/assets/product/emerald-precious-1.png",
+    images: [
+      "/assets/product/emerald-precious-1.png",
+      "/assets/product/emerald-precious-2.png",
+      "/assets/product/emerald-precious-3.png",
+    ],
+    features: [
+      "Authenticity Guaranteed",
+      "Free Shipping",
+      "Lifetime Warranty",
+      "30-Day Returns",
+    ],
+    details: [
+      {
+        title: "Ancient Protection",
+        description:
+          "Native American tribes considered turquoise sacred, believing it brought protection and strength. Ancient Egyptians used turquoise in amulets and burial masks, associating it with the gods Horus and Ra.",
+        image: "/assets/product/natural-kazakhstan-turquoise.png",
+      },
+      {
+        title: "Matrix Patterns",
+        description:
+          "The matrix in turquoise, the brown or black veins running through the stone, creates unique patterns. Stones with attractive matrix patterns are often more valuable than solid-colored stones.",
+        image: "/assets/product/natural-kazakhstan-turquoise-1.png",
+      },
+      {
+        title: "Color Changes",
+        description:
+          "Turquoise can change color based on its environment and the wearer's skin oils. Pure turquoise may become darker or lighter over time, which some collectors see as a sign of the stone's responsiveness.",
+        image: "/assets/product/natural-kazakhstan-turquoise-2.png",
+      },
+    ],
+  },
+  {
+    id: "precious-02",
+    name: "Ruby and Ruby Burmese, Mozambique ruby and Sri Lankan Ruby",
+    category: "precious",
+    className: "",
+    description:
+      "Natural rubies in rich red to deep crimson shades, including vibrant Burmese, Mozambique, and Sri Lankan origins. Known for their brilliance and timeless beauty, these gemstones are perfect for fine jewelry and elegant statement pieces.",
+    image: "/assets/product/ruby-precious-1.png",
+    images: [
+      "/assets/product/ruby-precious-1.png",
+      "/assets/product/ruby-precious-2.png",
+      "/assets/product/ruby-precious-3.png",
+      "/assets/product/ruby-precious-4.png",
+      "/assets/product/ruby-precious-5.png",
+      "/assets/product/ruby-precious-6.png",
+      "/assets/product/ruby-precious-7.png",
+      "/assets/product/ruby-precious-8.png",
+    ],
+    features: [
+      "Authenticity Guaranteed",
+      "Free Shipping",
+      "Lifetime Warranty",
+      "30-Day Returns",
+    ],
+    details: [
+      {
+        title: "Ancient Protection",
+        description:
+          "Native American tribes considered turquoise sacred, believing it brought protection and strength. Ancient Egyptians used turquoise in amulets and burial masks, associating it with the gods Horus and Ra.",
+        image: "/assets/product/natural-kazakhstan-turquoise.png",
+      },
+      {
+        title: "Matrix Patterns",
+        description:
+          "The matrix in turquoise, the brown or black veins running through the stone, creates unique patterns. Stones with attractive matrix patterns are often more valuable than solid-colored stones.",
+        image: "/assets/product/natural-kazakhstan-turquoise-1.png",
+      },
+      {
+        title: "Color Changes",
+        description:
+          "Turquoise can change color based on its environment and the wearer's skin oils. Pure turquoise may become darker or lighter over time, which some collectors see as a sign of the stone's responsiveness.",
+        image: "/assets/product/natural-kazakhstan-turquoise-2.png",
+      },
+    ],
+  },
+  {
+    id: "precious-03",
+    name: "Sapphire Blue,yellow, pink and kashmiri sapphire",
+    category: "precious",
+    className: "",
+    description:
+      "Natural sapphires in stunning blue, yellow, and pink hues, including the highly prized Kashmiri variety known for its rich, velvety blue tone. These gemstones offer exceptional brilliance and elegance, making them perfect for fine jewelry, custom designs, and timeless statement pieces.",
+    image: "/assets/product/sapphire-precious-1.png",
+    images: [
+      "/assets/product/sapphire-precious-1.png",
+      "/assets/product/sapphire-precious-2.png",
+    ],
+    features: [
+      "Authenticity Guaranteed",
+      "Free Shipping",
+      "Lifetime Warranty",
+      "30-Day Returns",
+    ],
+    details: [
+      {
+        title: "Ancient Protection",
+        description:
+          "Native American tribes considered turquoise sacred, believing it brought protection and strength. Ancient Egyptians used turquoise in amulets and burial masks, associating it with the gods Horus and Ra.",
+        image: "/assets/product/natural-kazakhstan-turquoise.png",
+      },
+      {
+        title: "Matrix Patterns",
+        description:
+          "The matrix in turquoise, the brown or black veins running through the stone, creates unique patterns. Stones with attractive matrix patterns are often more valuable than solid-colored stones.",
+        image: "/assets/product/natural-kazakhstan-turquoise-1.png",
+      },
+      {
+        title: "Color Changes",
+        description:
+          "Turquoise can change color based on its environment and the wearer's skin oils. Pure turquoise may become darker or lighter over time, which some collectors see as a sign of the stone's responsiveness.",
+        image: "/assets/product/natural-kazakhstan-turquoise-2.png",
+      },
+    ],
+  },
+  {
+    id: "semi-precious-01",
+    name: "Natural Turqouise gemstone",
+    category: "semi-precious",
+    className: "",
+    description:
+      "Natural turquoise comes in shades of sky blue, teal, and green, with patterns like clean, spiderweb, and patchy matrix",
+    image: "/assets/product/turquoise-semi-precious-2.png",
+    images: [
+      "/assets/product/turquoise-semi-precious-1.png",
+      "/assets/product/turquoise-semi-precious-2.png",
+      "/assets/product/turquoise-semi-precious-3.png",
+      "/assets/product/turquoise-semi-precious-4.png",
+      "/assets/product/turquoise-semi-precious-5.png",
+      "/assets/product/turquoise-semi-precious-6.png",
+      "/assets/product/turquoise-semi-precious-7.png",
+      "/assets/product/turquoise-semi-precious-8.png",
+      "/assets/product/turquoise-semi-precious-9.png",
+      "/assets/product/turquoise-semi-precious-10.png",
+      "/assets/product/turquoise-semi-precious-11.png",
+      "/assets/product/turquoise-semi-precious-12.png",
+    ],
+    features: [
+      "Authenticity Guaranteed",
+      "Free Shipping",
+      "Lifetime Warranty",
+      "30-Day Returns",
+    ],
+    details: [
+      {
+        title: "Ancient Protection",
+        description:
+          "Native American tribes considered turquoise sacred, believing it brought protection and strength. Ancient Egyptians used turquoise in amulets and burial masks, associating it with the gods Horus and Ra.",
+        image: "/assets/product/natural-kazakhstan-turquoise.png",
+      },
+      {
+        title: "Matrix Patterns",
+        description:
+          "The matrix in turquoise, the brown or black veins running through the stone, creates unique patterns. Stones with attractive matrix patterns are often more valuable than solid-colored stones.",
+        image: "/assets/product/natural-kazakhstan-turquoise-1.png",
+      },
+      {
+        title: "Color Changes",
+        description:
+          "Turquoise can change color based on its environment and the wearer's skin oils. Pure turquoise may become darker or lighter over time, which some collectors see as a sign of the stone's responsiveness.",
+        image: "/assets/product/natural-kazakhstan-turquoise-2.png",
+      },
+    ],
+  },
+  {
+    id: "semi-precious-02",
+    name: "Turmaline",
+    category: "semi-precious",
+    className: "",
+    description:
+      "Natural tourmaline gemstones available in a wide range of vibrant colors, from deep greens and pinks to bi-color varieties. Known for their brilliance and versatility, perfect for unique and colorful jewelry designs.",
+    image: "/assets/product/turmaline-semi-precious-1.png",
+    images: [
+      "/assets/product/turmaline-semi-precious-1.png",
+      "/assets/product/turmaline-semi-precious-2.png",
+      "/assets/product/turmaline-semi-precious-3.png",
+    ],
+    features: [
+      "Authenticity Guaranteed",
+      "Free Shipping",
+      "Lifetime Warranty",
+      "30-Day Returns",
+    ],
+    details: [
+      {
+        title: "Ancient Protection",
+        description:
+          "Native American tribes considered turquoise sacred, believing it brought protection and strength. Ancient Egyptians used turquoise in amulets and burial masks, associating it with the gods Horus and Ra.",
+        image: "/assets/product/natural-kazakhstan-turquoise.png",
+      },
+      {
+        title: "Matrix Patterns",
+        description:
+          "The matrix in turquoise, the brown or black veins running through the stone, creates unique patterns. Stones with attractive matrix patterns are often more valuable than solid-colored stones.",
+        image: "/assets/product/natural-kazakhstan-turquoise-1.png",
+      },
+      {
+        title: "Color Changes",
+        description:
+          "Turquoise can change color based on its environment and the wearer's skin oils. Pure turquoise may become darker or lighter over time, which some collectors see as a sign of the stone's responsiveness.",
+        image: "/assets/product/natural-kazakhstan-turquoise-2.png",
+      },
+    ],
+  },
+  // {
+  //   id: "semi-precious-03",
+  //   name: "Tanzanite",
+  //   category: "semi-precious",
+  //   className: "",
+  //   description:
+  //     "Rare and beautiful tanzanite featuring captivating violet-blue hues with exceptional sparkle. Highly sought after for fine jewelry and elegant statement pieces.",
+  //   image: "/assets/product/",
+  //   images: ["/assets/product/"],
+  //   features: [
+  //     "Authenticity Guaranteed",
+  //     "Free Shipping",
+  //     "Lifetime Warranty",
+  //     "30-Day Returns",
+  //   ],
+  //   details: [
+  //     {
+  //       title: "Ancient Protection",
+  //       description:
+  //         "Native American tribes considered turquoise sacred, believing it brought protection and strength. Ancient Egyptians used turquoise in amulets and burial masks, associating it with the gods Horus and Ra.",
+  //       image: "/assets/product/natural-kazakhstan-turquoise.png",
+  //     },
+  //     {
+  //       title: "Matrix Patterns",
+  //       description:
+  //         "The matrix in turquoise, the brown or black veins running through the stone, creates unique patterns. Stones with attractive matrix patterns are often more valuable than solid-colored stones.",
+  //       image: "/assets/product/natural-kazakhstan-turquoise-1.png",
+  //     },
+  //     {
+  //       title: "Color Changes",
+  //       description:
+  //         "Turquoise can change color based on its environment and the wearer's skin oils. Pure turquoise may become darker or lighter over time, which some collectors see as a sign of the stone's responsiveness.",
+  //       image: "/assets/product/natural-kazakhstan-turquoise-2.png",
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: "semi-precious-04",
+  //   name: "Aquamarine",
+  //   category: "semi-precious",
+  //   className: "",
+  //   description:
+  //     "Natural aquamarine gemstones showcasing soft ocean-blue tones with excellent clarity and brilliance. A timeless choice for delicate, sophisticated jewelry creations.",
+  //   image: "/assets/product/",
+  //   images: ["/assets/product/"],
+  //   features: [
+  //     "Authenticity Guaranteed",
+  //     "Free Shipping",
+  //     "Lifetime Warranty",
+  //     "30-Day Returns",
+  //   ],
+  //   details: [
+  //     {
+  //       title: "Ancient Protection",
+  //       description:
+  //         "Native American tribes considered turquoise sacred, believing it brought protection and strength. Ancient Egyptians used turquoise in amulets and burial masks, associating it with the gods Horus and Ra.",
+  //       image: "/assets/product/natural-kazakhstan-turquoise.png",
+  //     },
+  //     {
+  //       title: "Matrix Patterns",
+  //       description:
+  //         "The matrix in turquoise, the brown or black veins running through the stone, creates unique patterns. Stones with attractive matrix patterns are often more valuable than solid-colored stones.",
+  //       image: "/assets/product/natural-kazakhstan-turquoise-1.png",
+  //     },
+  //     {
+  //       title: "Color Changes",
+  //       description:
+  //         "Turquoise can change color based on its environment and the wearer's skin oils. Pure turquoise may become darker or lighter over time, which some collectors see as a sign of the stone's responsiveness.",
+  //       image: "/assets/product/natural-kazakhstan-turquoise-2.png",
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: "semi-precious-05",
+  //   name: "Coral",
+  //   category: "semi-precious",
+  //   className: "",
+  //   description:
+  //     "Genuine coral gemstones in warm red to pink shades, offering smooth texture and natural beauty. Ideal for classic and traditional jewelry designs.",
+  //   image: "/assets/product/",
+  //   images: ["/assets/product/"],
+  //   features: [
+  //     "Authenticity Guaranteed",
+  //     "Free Shipping",
+  //     "Lifetime Warranty",
+  //     "30-Day Returns",
+  //   ],
+  //   details: [
+  //     {
+  //       title: "Ancient Protection",
+  //       description:
+  //         "Native American tribes considered turquoise sacred, believing it brought protection and strength. Ancient Egyptians used turquoise in amulets and burial masks, associating it with the gods Horus and Ra.",
+  //       image: "/assets/product/natural-kazakhstan-turquoise.png",
+  //     },
+  //     {
+  //       title: "Matrix Patterns",
+  //       description:
+  //         "The matrix in turquoise, the brown or black veins running through the stone, creates unique patterns. Stones with attractive matrix patterns are often more valuable than solid-colored stones.",
+  //       image: "/assets/product/natural-kazakhstan-turquoise-1.png",
+  //     },
+  //     {
+  //       title: "Color Changes",
+  //       description:
+  //         "Turquoise can change color based on its environment and the wearer's skin oils. Pure turquoise may become darker or lighter over time, which some collectors see as a sign of the stone's responsiveness.",
+  //       image: "/assets/product/natural-kazakhstan-turquoise-2.png",
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: "semi-precious-06",
+  //   name: "Opal",
+  //   category: "semi-precious",
+  //   className: "",
+  //   description:
+  //     "Natural opal gemstones displaying stunning play-of-color with flashes of rainbow brilliance. Perfect for eye-catching statement jewelry and unique artisan pieces.",
+  //   image: "/assets/product/",
+  //   images: ["/assets/product/"],
+  //   features: [
+  //     "Authenticity Guaranteed",
+  //     "Free Shipping",
+  //     "Lifetime Warranty",
+  //     "30-Day Returns",
+  //   ],
+  //   details: [
+  //     {
+  //       title: "Ancient Protection",
+  //       description:
+  //         "Native American tribes considered turquoise sacred, believing it brought protection and strength. Ancient Egyptians used turquoise in amulets and burial masks, associating it with the gods Horus and Ra.",
+  //       image: "/assets/product/natural-kazakhstan-turquoise.png",
+  //     },
+  //     {
+  //       title: "Matrix Patterns",
+  //       description:
+  //         "The matrix in turquoise, the brown or black veins running through the stone, creates unique patterns. Stones with attractive matrix patterns are often more valuable than solid-colored stones.",
+  //       image: "/assets/product/natural-kazakhstan-turquoise-1.png",
+  //     },
+  //     {
+  //       title: "Color Changes",
+  //       description:
+  //         "Turquoise can change color based on its environment and the wearer's skin oils. Pure turquoise may become darker or lighter over time, which some collectors see as a sign of the stone's responsiveness.",
+  //       image: "/assets/product/natural-kazakhstan-turquoise-2.png",
+  //     },
+  //   ],
+  // },
 ];
 
 export const categories = [
@@ -743,4 +1093,10 @@ export const categories = [
   { name: "Emerald", image: "/assets/emerald.webp", slug: "emerald" },
   { name: "Ruby", image: "/assets/ruby.webp", slug: "ruby" },
   { name: "Sapphire", image: "/assets/sapphire.webp", slug: "sapphire" },
+  { name: "Precious", image: "/assets/precious.webp", slug: "precious" },
+  {
+    name: "Semi Precious",
+    image: "/assets/semi-precious.webp",
+    slug: "semi-precious",
+  },
 ];
